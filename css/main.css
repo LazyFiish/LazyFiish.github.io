@@ -1608,7 +1608,7 @@ pre code {
   width: 100%;
 }
 .with-love {
-  color: #ff0000;
+  color: #000000;
   display: inline-block;
   margin: 0 5px;
 }
@@ -2443,6 +2443,14 @@ ul.breadcrumb li:last-child {
   border-bottom-color: #111;
   color: #111;
 }
+.gt-header a,
+.gt-comments a,
+.gt-popup a {
+  border-bottom: 0;
+}
+.gt-container .gt-popup .gt-action.is--active::before {
+  top: 0.7em;
+}
 .use-motion .animated {
   animation-fill-mode: none;
   visibility: inherit;
@@ -2700,7 +2708,7 @@ hr {
   vertical-align: middle;
 }
 .links-of-author a::before {
-  background: #187c60;
+  background: #37796e;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
