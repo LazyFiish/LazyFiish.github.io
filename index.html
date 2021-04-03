@@ -437,7 +437,7 @@
         });
     }
 
-    const { app_id, app_key, server_url } = {"enable":true,"app_id":"g25PC3ozChsRVjmhwVKI37kl-MdYXbMMI","app_key":"PtBI51uW1OG9SB0CM6Lji8GQ","server_url":"lazyfiish.github.io/","security":false};
+    const { app_id, app_key, server_url } = {"enable":true,"app_id":"g25PC3ozChsRVjmhwVKI37kl-MdYXbMMI","app_key":"PtBI51uW1OG9SB0CM6Lji8GQ","server_url":null,"security":false};
     function fetchData(api_server) {
       const Counter = (method, url, data) => {
         return fetch(`${api_server}/1.1${url}`, {
@@ -451,7 +451,7 @@
         });
       };
       if (CONFIG.page.isPost) {
-        // if (CONFIG.hostname !== location.hostname) return;
+        if (CONFIG.hostname !== location.hostname) return;
         addCount(Counter);
       } else if (document.querySelectorAll('.post-title-link').length >= 1) {
         showTime(Counter);
